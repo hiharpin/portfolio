@@ -7,11 +7,11 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#0ea5e9',
+        primary: '#16a34a',
         darkblue: '#0284c7',
         black: '#171717',
         neutral: '#737373',
-        softblue: '#f0f9ff',
+        softblue: '#f5f5f5',
         gray: '#9ca3af'
       },
       screen: {
