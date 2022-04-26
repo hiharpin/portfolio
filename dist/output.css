@@ -1024,7 +1024,7 @@ body {
 
 .dark .hamburger-line {
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(226 232 240 / var(--tw-bg-opacity));
 }
 
 .hamburger-active > span:nth-child(1) {
