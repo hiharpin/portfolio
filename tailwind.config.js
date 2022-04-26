@@ -15,7 +15,9 @@ module.exports = {
         black: '#171717',
         neutral: '#737373',
         softblue: '#f5f5f5',
-        gray: '#9ca3af'
+        gray: '#9ca3af',
+        neutral600:'#404040'
+        
       },
       screen: {
         '2xl' : '1320px',
