@@ -1,5 +1,6 @@
 module.exports = {
   content: ['index.html'],
+  darkMode: 'class',
   theme: {
     container: {
       center: true,
@@ -7,6 +8,8 @@ module.exports = {
     },
     extend: {
       colors: {
+        neutralsoft: '#262626',
+        neutraldark: '#171717',
         primary: '#16a34a',
         darkblue: '#0284c7',
         black: '#171717',

@@ -10,6 +10,18 @@ window.onscroll = function () {
     }
 }
 
+//checkbox
+const checkbox = document.querySelector
+('#toggle');
+const html = document.querySelector
+('html');
+
+checkbox.addEventListener('click', function () 
+{
+   checkbox.checked ? html.classList.add
+   ('dark') : html.classList.remove('dark');
+});
+
 // Hamburger
 const hamburger = document.querySelector('#hamburger');
 const navMenu = document.querySelector('#nav-menu');

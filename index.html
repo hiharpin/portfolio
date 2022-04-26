@@ -7,10 +7,11 @@
     <link href="dist/output.css" rel="stylesheet">
     <title>Harpin - UI UX Designer</title>
 </head>
-<body>
+<body class="dark:bg-black  
+dark:text-slate-100">
     <!-- Header Start -->
     <header class="bg-white absolute top-0 left-0 w-full flex
-    items-center z-10">
+    items-center z-10 dark:bg-black dark:text-white">
         <div class="container">
             <div class="flex item-center justify-between relative">
                 <div class="px-4">
@@ -26,9 +27,9 @@
                         <span class="hamburger-line transition duration-300 ease-in-out
                         origin-bottom-left"></span>
                     </button>
+                    
 
-
-                    <nav id="nav-menu" class="hidden absolute py-5 bg-white 
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white dark:bg-black
                     shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none
                     lg:rounded-none">
                         <ul class="block lg:flex"> 
@@ -52,9 +53,24 @@
                                 <a href="#blog" class="text-base text-gray
                                 py-2 mx-8 flex group-hover:text-primary hover:font-bold">Blog</a>
                             </li>
+                            
                             <li class="group">
-                                <a href="#contact" class="text-base text-gray
-                                py-2 mx-8 flex group-hover:text-primary hover:font-bold">Contact</a>
+                                <div class="text-base flex py-2 mx-8 flex">
+                                    <span class="text-base flex text-gray
+                                    mr-2">Theme</span>
+                                    <input type="checkbox" id="toggle"
+                                    class="hidden" />
+                                    <label for="toggle">
+                                        <div class="w-9 h-5 bg-slate-300 dark:bg-primary
+                                        rounded-full flex items-center p-1
+                                        cursor-pointer">
+                                        <div class="w-4 h-4 bg-white 
+                                        rounded-full toggle-circle duration-500"></div>
+                                     </div>
+                                    </label>
+                                    <span class="text-sm text-slate-300
+                                    mr-2"></span>
+                                 </div>
                             </li>
                         </ul>
                     </nav>
@@ -105,7 +121,7 @@
                     <h4 class="font-bold text-primary text-lg
                     mb-3">About Me</h4>
                     <h2 class="font-bold text-black text-2xl
-                    mb-4 max-w-md lg:text-3xl">Hello 👋 nice to meet you</h2>
+                    mb-4 max-w-md lg:text-3xl dark:text-white">Hello 👋 nice to meet you</h2>
                         <p class="font-medium text-base text-gray 
                         max-w-xl lg:text-lg">I'm a product designer and developer, 
                             specializing in UI/UX and digital design, 
@@ -117,7 +133,7 @@
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
                     <h3 class="font-semibold text-black text-2xl 
-                    mb-4 lg:text-3xl lg:pt-10">Let's connect with me ❤️</h3>
+                    mb-4 lg:text-3xl lg:pt-10 dark:text-white">Let's connect with me ❤️</h3>
                     <p class="font-medium text-base text-gray mb-6 lg:text-lg">these are some of the social media that I have, 
                         please follow me and let's connect together
                     </p>
@@ -191,12 +207,12 @@
     <!-- About Section End -->
 
     <!-- Portfolio Section Start -->
-    <section id="portfolio" class="pt-36 pb-16 bg-softblue">
+    <section id="portfolio" class="pt-36 pb-16 bg-softblue dark:bg-neutralsoft dark:text-white">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
                     <h4 class="font-semibold text-lg text-primary mb-2">Portfolio</h4>
-                    <h2 class="font-bold text-black text-3xl mb-4 sm:text-4xl lg:text-5xl">New Project</h2>
+                    <h2 class="font-bold text-black text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">New Project</h2>
                     <p class="font-medium text-md text-gray md:text-lg">these are some designs that I worked on in a project. 
                         If you are interested in working with me, please contact me
                     </p>
@@ -212,7 +228,7 @@
                         width="w-full" />
                     </div>
                     <h3 class="font-semibold text-xl text-black mt-5 
-                    mb-3">Blue jeans illustration</h3>
+                    mb-3 dark:text-white">Blue jeans illustration</h3>
                     <p class="font-medium text-base text-gray">
                         
                     </p>
@@ -224,7 +240,7 @@
                         width="w-full" />
                     </div>
                     <h3 class="font-semibold text-xl text-black mt-5 
-                    mb-3">Mobile banking app concept</h3>
+                    mb-3 dark:text-white">Mobile banking app concept</h3>
                     <p class="font-medium text-base text-gray">
                         
                     </p>
@@ -236,7 +252,7 @@
                         width="w-full" />
                     </div>
                     <h3 class="font-semibold text-xl text-black mt-5 
-                    mb-3">Chat apps design</h3>
+                    mb-3 dark:text-white">Chat apps design</h3>
                     <p class="font-medium text-base text-gray">
                         
                     </p>
@@ -248,7 +264,7 @@
                         width="w-full" />
                     </div>
                     <h3 class="font-semibold text-xl text-black mt-5 
-                    mb-3">Dribbble Invitations</h3>
+                    mb-3 dark:text-white">Dribbble Invitations</h3>
                     <p class="font-medium text-base text-gray">
 
                     </p>
@@ -259,12 +275,12 @@
     <!-- Portfolio Section End -->
 
     <!-- Clients Section Start -->
-    <section id="clients" class="pt-36 pb-32 bg-white">
+    <section id="clients" class="pt-36 pb-32 bg-white dark:bg-black dark:text-white">
         <div class="container">
             <div class="w-full px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
                     <h4 class="font-semibold text-lg text-primary mb-2"> Our Clients</h4>
-                    <h2 class="font-bold text-black text-3xl mb-4 sm:text-4xl lg:text-5xl">We've worked with amazing companies 🔥</h2>
+                    <h2 class="font-bold text-black text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">We've worked with amazing companies 🔥</h2>
                     <p class="font-medium text-md text-gray md:text-lg">we will provide the best service for you
                     </p>
                 </div>
@@ -273,19 +289,19 @@
 
             <div class="w-full px-4">
                 <div class="flex flex-wrap items-center justify-center">
-                    <a href="#" class="max-w-[220px] mx-4 py-4 grayscale opacity-20
+                    <a href="#" class="max-w-[220px] mx-4 py-4 grayscale opacity-40
                     transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
                         <img src="dist/img/clients/Google-Logo.wine.svg" alt="Google">
                     </a>
-                    <a href="#" class="max-w-[220px] mx-4 py-4 grayscale opacity-20
+                    <a href="#" class="max-w-[220px] mx-4 py-4 grayscale opacity-40
                     transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
                         <img src="dist/img/clients/Meta_Platforms-Logo.wine.svg" alt="Meta">
                     </a>
-                    <a href="#" class="max-w-[220px] mx-4 py-4 grayscale opacity-20
+                    <a href="#" class="max-w-[220px] mx-4 py-4 grayscale opacity-40
                     transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
                         <img src="dist/img/clients/Netflix-Logo.wine.svg" alt="Netflix">
                     </a>
-                    <a href="#" class="max-w-[220px] mx-4 py-4 grayscale opacity-20
+                    <a href="#" class="max-w-[220px] mx-4 py-4 grayscale opacity-40
                     transition duration-500 hover:grayscale-0 hover:opacity-100 lg:mx-6 xl:mx-8">
                         <img src="dist/img/clients/Spotify-Logo.wine.svg" alt="Spotify">
                     </a>
@@ -296,12 +312,12 @@
     <!-- Clients Section End -->
 
     <!-- Blog Section Start -->
-    <section id="blog" class="pt-36 pb-32 bg-softblue">
+    <section id="blog" class="pt-36 pb-32 bg-softblue dark:bg-neutralsoft dark:text-white">
     <div class="container">
         <div class="w-full px-4">
         <div class="max-w-xl mx-auto text-center mb-16">
             <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
-            <h2 class="font-bold text-black text-3xl mb-4 sm:text-4xl lg:text-5xl">New post</h2>
+            <h2 class="font-bold text-black text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">New post</h2>
             <p class="font-medium text-md text-gray md:text-lg">these are my thoughts that discuss anything,
                  whether it's design, illustration, ui ux design and others
             </p>
@@ -368,12 +384,12 @@
     <!-- Blog Section End -->
 
     <!-- Contact Section Start -->
-    <Section id="contact" class="pt-36 pb-32">
+    <Section id="contact" class="pt-36 pb-32 dark:bg-neutraldark dark:text-white">
         <div class="container">
             <div class="wfull px-4">
                 <div class="max-w-xl mx-auto text-center mb-16">
                     <h4 class="font-semibold text-lg text-primary mb-2">Contact</h4>
-                    <h2 class="font-bold text-black text-3xl mb-4 sm:text-4xl lg:text-5xl">send me email 📧</h2>
+                    <h2 class="font-bold text-black text-3xl mb-4 sm:text-4xl lg:text-5xl dark:text-white">send me email 📧</h2>
                     <p class="font-medium text-md text-gray md:text-lg">You can contact me for more information or asking a question
                     </p>
                 </div>
@@ -416,7 +432,7 @@
     <!-- Contact Section End -->
 
     <!-- Footer Section Start -->
-    <footer class="bg-primary pt-24 pb-12">
+    <footer class="bg-primary pt-24 pb-12 dark:bg-black dark:text-white">
         <div class="container">
             <div class="flex flex-wrap">
                 
@@ -436,19 +452,19 @@
                         <ul class="text-softblue">
                             <li>
                                 <a href="#" class="inline-block text-base
-                                hover:text-yellow-300 mb-3">Design Principles</a>
+                                hover:text-yellow-300 dark:hover:text-primary mb-3">Design Principles</a>
                             </li>
                             <li>
                                 <a href="#" class="inline-block text-base
-                                hover:text-yellow-300 mb-3">Information system</a>
+                                hover:text-yellow-300 dark:hover:text-primary mb-3">Information system</a>
                             </li>
                             <li>
                                 <a href="#" class="inline-block text-base
-                                hover:text-yellow-300 mb-3">UI/UX Design</a>
+                                hover:text-yellow-300 dark:hover:text-primary mb-3">UI/UX Design</a>
                             </li>
                             <li>
                                 <a href="#" class="inline-block text-base
-                                hover:text-yellow-300 mb-3">illustration</a>
+                                hover:text-yellow-300 dark:hover:text-primary mb-3">illustration</a>
                             </li>
                         </ul>
                     </div>
@@ -458,34 +474,34 @@
                         <ul class="text-softblue">
                             <li>
                                 <a href="#home" class="inline-block text-base
-                                hover:text-yellow-300 mb-3">Home</a>
+                                hover:text-yellow-300 dark:hover:text-primary mb-3">Home</a>
                             </li>
                             <li>
                                 <a href="#about" class="inline-block text-base
-                                hover:text-yellow-300 mb-3">About me</a>
+                                hover:text-yellow-300 dark:hover:text-primary mb-3">About me</a>
                             </li>
                             <li>
                                 <a href="#portfolio" class="inline-block text-base
-                                hover:text-yellow-300 mb-3">Portfolio</a>
+                                hover:text-yellow-300 dark:hover:text-primary mb-3">Portfolio</a>
                             </li>
                             <li>
                                 <a href="#clients" class="inline-block text-base
-                                hover:text-yellow-300 mb-3">Clients</a>
+                                hover:text-yellow-300 dark:hover:text-primary mb-3">Clients</a>
                             </li>
                             <li>
                                 <a href="#blog" class="inline-block text-base
-                                hover:text-yellow-300 mb-3">Blog</a>
+                                hover:text-yellow-300 dark:hover:text-primary mb-3">Blog</a>
                             </li>
                             <li>
                                 <a href="#contact" class="inline-block text-base
-                                hover:text-yellow-300 mb-3">Contact</a>
+                                hover:text-yellow-300 dark:hover:text-primary mb-3">Contact</a>
                             </li>
                         </ul>
                     </div>
                 
             </div>
            
-            <div class="w-full pt-10 border-t  border-green-700">
+            <div class="w-full pt-10 border-t  border-green-700 dark:border-white">
                 <div class="flex item-center justify-center mb-5">
                     <!---- Instagram -->
                     <a href="http://instagram.com/pinuuuds"
